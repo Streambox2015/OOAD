@@ -1,38 +1,43 @@
 <b>Use Case ID:</b> 1</br>
-<b>Use Case Title:</b> Register premium member</b>
+<b>Use Case Title:</b> Register gold member</b>
 </br>
-<b>Primary Actor:</b> Prospective premium member</br>
-<b>Goal in Context:</b> The prospective premium member registers themselves as a premium member with the system.</br>
+<b>Primary Actor:</b> Prospective gold member</br>
+<b>Goal in Context:</b> The prospective gold member registers themselves as a gold member with the system.</br>
 <b>Scope:</b> Personal use of system</br></br>
 <b>Stakeholders and Interests:</b></br>
-<b>Prospective  premium member:</b> Wants to register themselves with the system and use its features of playing and streaming music.</br>
-<b>Provider:</b> Wants to provide the prospective premium member access to their system so that they can play and purchase music tracks.</br>
-<b>Advertiser:</b> Wants their advertisements to be placed on the system to be viewed by the prospective premium member</br></br>
+<b>Prospective gold member:</b> Wants to register themselves with the system and use its features of playing and streaming music.</br>
+<b>Provider:</b> Wants to provide the prospective gold member access to their system so that they can play and purchase music tracks.</br>
+<b>Advertiser:</b> Wants their advertisements to be placed on the system to be viewed by the prospective gold member</br></br>
 
-<b>Minimal Guarantees:</b> The prospective member will have their own unique username and password and will be registered with the system as a premium member. The prospective member will be able to log in and out of the system any time they wish.</br>
-<b>Success Guarantees:</b> The prospective premium member will have access to any premium features the system has to offer.</br></br>
+<b>Minimal Guarantees:</b> The prospective member will have their own unique username and password and will be registered with the system as a gold member. The gold member will be able to log in and out of the system any time they wish.</br>
+<b>Success Guarantees:</b> The prospective gold member will have access to any gold features the system has to offer. The gold member will have the option of making adverts invisible.</br></br>
 <b>Trigger:</b> The prospective member clicks the "Register" link on the top right hand side corner of the system's login page</b></br>
 </br>
-<b>Main Success Scenario</b></br>
-<b>1. Prospective premium member:</b> The prospective premium member invokes the registration function</b></br>
+<b>Main Success Scenario -</b></br>
+<b>1. Prospective gold member:</b> The prospective gold member invokes the registration function</b></br>
 <b>2. System: </b> The system opens a blank member registration form</br>
-<b>3. Prosepctive premium member: </b> The prospective member fills in all the required credentials correctly (including to choose the premuim option from the account type drop-down menu). The prospective member clicks the confirmation button</br>
+<b>3. Prosepctive gold member: </b> The prospective member fills in all the required credentials correctly (including to choose the gold option from the account type drop-down menu). The prospective member clicks the confirmation button</br>
 <b>4. System: </b> The system checks if the data that has been entered into the form's mandatory fields is valid.</br>
 <b>5. System: </b> The system displays a summary of the data that has been input and prompts the user to verify if it is in fact the data they want entered.</br>
-<b>6. Prospective premium member:</b> The prospective premium member is satisfied that the summary contains the correct details and confirms it with the system.</b></br>
-<b>7. System:</b> The system records the prospectives premium member's details and logs them into the system.</br>
-<b>8. System:</b> The system directs the new premium member to the systems home page.</br>
-
-
+<b>6. Prospective gold member:</b> The prospective gold member is satisfied that the summary contains the correct details and confirms it with the system.</b></br>
+<b>7. System:</b> The system records the prospectives gold member's details and opens a new window asking the user to enter a verification code.</br>
+<b>8. System:</b> The system informs the prospectives gold member that a validation code has been sent to the email address they have just registered.</br>
+<b>9. Prospective gold member:</b> The prospective gold member checks their email account, retrieves the validation code from the email sent by the system and enters it into the new validation window opened the system.</br>
+<b>10. System:</b> The system finds the code to be valid and now asks the user if they wish to enter their paypal or credit card details.</br>
+<b>11. Prospective gold member:</b> The prospective gold member deicides to enter their paypal details into the form provided by the system.</br>
+<b>12. System:</b> The system records the paypal details and redirects the gold member to the systems home page.</br>
 
 <br>
-<b>Alternatives</b></br>
+<b>Alternatives -</b></br>
 <b>1a.</b> The member is already registered with the system. The member logs into the system with their username and password. </br>
 <b>1b.</b> The member is already registered with the system, but wants to make another account with different details.</br>
 <b>1c.</b> The member is already registered with the system, but wants to make another account with different details. However, the member has already registered three different accounts while using the same ip address.</br>
-<b>3a.</b> The prospective premium member chooses the regular member option from the account type drop down menu on the register member form to register as a reuglar member instead.</br>
+<b>3a.</b> The prospective gold member chooses the regular member option from the account type drop down menu on the register member form to register as a reuglar member instead.</br>
 <b>3b.</b> The prospective member enters invalid data into the mandatory fields. The system prompts the prospective member to enter valid data where it is necessary (this includes unique usernames, emails and phone numbers that have already been registered in the system).</br>
-<b>6a.</b> The prospective member is not satisfied with one of the details shown by the system in the revision summary. The prospective member decides to change the detail before reconfirming with the system.</br></br>
+<b>6a.</b> The prospective member is not satisfied with one of the details shown by the system in the revision summary. The prospective member decides to change the detail before reconfirming with the system.</br>
+<b>10a.</b>The system finds the code to be invalid and asks the user to try entering it again or to send another code to their email address</br>
+<b>11a.</b> The prospective gold member deicides to enter their credit card details into the form provided by the system.</br>
+<b>11b.</b> The prospective gold member deicides not to enter either credit card or paypal details into the form provided by the system. The system redirects the member to the home page.</br>
 
 
 <b>Technology and Data Variations List:</b> None</b></br>
@@ -43,9 +48,10 @@
 <b>Channel to Primary Actor:</b> Java Application</br>
 <b>Channels to Secondary Actors:</b> None</br>
 <b>Open Issues</b> The prospective member could register themselves with the system as many times as they as wish as long as they provide different ip addresses and registration details each time. Their are few methods to prevent bogus or harmful accounts being created.</br>
+There may be issues with the validation code being sent to the email address arriving very slow.
 </br></br>
-<!---POST CONDITIONS !--->
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!---POST CONDITIONS !-->
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 </br></br>
 
 <b>Use Case ID:</b> 2 </br>
